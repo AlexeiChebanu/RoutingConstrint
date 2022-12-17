@@ -12,7 +12,7 @@ namespace Routing.CustomConstraints
                 return false;
             }
 
-            var regex = new Regex("^(apr|jul| oct|jan)$");
+            var regex = new Regex("^(apr|jul|oct|jan)$");
             string? monthValue = Convert.ToString(values[routeKey]);
 
             if (regex.IsMatch(monthValue))
